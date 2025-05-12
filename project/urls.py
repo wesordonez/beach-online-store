@@ -7,6 +7,7 @@ from django.contrib.sitemaps.views import sitemap
 
 from django.views.generic import TemplateView
 
+from django.apps import apps
 from django.contrib import admin
 from django.urls import path
 
@@ -48,6 +49,9 @@ urlpatterns = [
     path('', home_view, name='home'),
     path('about/', about_view, name='about'),
     path("__reload__/", include("django_browser_reload.urls")),
+    
+    # Oscar Ecommerce
+    path('shop/', include(apps.get_app_config('oscar').urls[0])),
 ]
 
 if settings.DEBUG:
