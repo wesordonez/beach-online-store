@@ -6,7 +6,7 @@ django-browser-reload==1.18.0
 
 sqlparse==0.5.3
 
-PyJWT==2.10.1
+PyJWT
 
 django-phonenumber-field==8.1.0
 

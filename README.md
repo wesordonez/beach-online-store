@@ -87,6 +87,7 @@ Test the website works and the contact form successfully writes data to the crea
 
 9. To run Tailwind CSS open a new terminal and run:
 ```py
+cd styling
 npm install tailwindcss@latest
 npm install cross-env
 npm install postcss-simple-vars
