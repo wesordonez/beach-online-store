@@ -89,7 +89,7 @@
             <div class="w-max text-lg flex gap-7 h-full lg:mx-auto lg:place-items-center max-lg:place-items-end max-lg:flex-col max-lg:mt-[60px] max-lg:gap-5 text-blue-900">
                 <a class="header-links flex items-center gap-1" href="{% url 'home' %}">🏠 Home</a>
                 <a class="header-links flex items-center gap-1" href="{% url 'about' %}">🌴 About</a>
-                <a class="header-links flex items-center gap-1" href="#">🛍️ Shop</a>
+                <a class="header-links flex items-center gap-1" href="{% url 'catalogue:index' %}">🛍️ Shop</a>
                 <a class="header-links flex items-center gap-1" href="{% url 'blogs' %}" rel="noreferrer">📰 Blogs</a>
                 <a class="header-links flex items-center gap-1" href="{% url 'contact-us' %}" rel="noreferrer">📬 Contact</a>
             </div>
