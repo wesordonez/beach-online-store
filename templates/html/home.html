@@ -5,302 +5,92 @@
 
 {% block content %}
 
-    <section class="w-full min-h-[100vh]  max-w-[100vw]
-                        flex flex-col overflow-hidden relative"
-                        id="hero-section"
-                        >
-            
-            <div class="w-full h-full p-[5%]
-                        place-content-center min-h-[100vh]
-                        justify-around place-items-center
-                        flex max-lg:flex-col">
-
-                <div class="flex flex-col place-content-center max-w-[650px] min-w-[550px] 
-                            max-md:min-w-[300px]">
-                    <h1 class="text-6xl font-semibold uppercase 
-                            leading-normal max-md:text-5xl max-md:leading-[70px]">
-                        Dunosis LLC Web Development Django Template 🚀
-                    </h1>
-                    <div class="mt-5 p-2 text-justify max-md:max-w-full">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi consequuntur provident, aperiam blanditiis quia quae fugit commodi aliquam fugiat earum repellendus impedit ex perspiciatis iste a, sint possimus cupiditate odio? Delectus, recusandae! Iure porro illum sint labore, expedita inventore sapiente fugit, consectetur totam nemo temporibus sunt eligendi, odio esse!
-                    </div>
-                    
-                    <a href="https://github.com/PaulleDemon/Django-website-template" 
-                                        class="btn mt-5 ml-auto 
-                                                duration-[0.3s]
-                                                transition-transform
-                                                hover:translate-x-2
-                                                ">
-                        <span>Get started</span>
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="max-w-[750px] 
-                            place-content-center
-                            place-items-center
-                            tw max-md:!mt-10">
-                    <div class="rounded-lg overflow-clip shadow-xl ">
-                        <img src="{% static './assets/images/home/dashboard.png' %}" 
-                                alt="dashboard" class="w-full h-full">
-                    </div>
-                    <div class="mt-5 p-2 text-justify text-2xl">
-                        Code Less. Deliver More
-                    </div>
-                </div>
-
-            </div>
-        
-    </section>
-
-
-    <section class="w-full  max-w-[100vw]
-                    flex flex-col overflow-hidden relative 
-                    place-items-center
-                    place-content-center
-                    p-6
-                    "
-                    >
-
-        <h2 class="text-5xl max-md:text-3xl">Features made for perfect delivery</h2>
-
-        <div class="flex max-lg:flex-col w-full gap-8 
-                    place-content-center mt-10 p-4
-                    place-items-center
-                    ">
-
-            <div class="w-[250px] h-[250px] 
-                        flex flex-col shadow-xl
-                        rounded-lg
-                        place-content-center place-items-center
-                        ">
-                <i class="bi bi-cloud-upload-fill 
-                            text-[#2c2a2a]
-                            text-6xl"></i>
-                <h3 class="text-xl mt-5">Production ready</h2>
-            </div>   
-            <div class="w-[250px] h-[250px] 
-                        flex flex-col shadow-xl
-                        rounded-lg
-                        place-content-center place-items-center
-                        ">
-                <i class="bi bi-phone-fill 
-                        text-[#2c2a2a]
-                            text-6xl"></i>
-                <h3 class="text-xl text-center mt-5">Responsive UI</h2>
-            </div>  
-            <div class="w-[250px] h-[250px] 
-                        flex flex-col shadow-xl
-                        rounded-lg
-                        place-content-center place-items-center
-                        ">
-                <i class="bi bi-database-fill 
-                        text-[#2c2a2a]
-                            text-6xl"></i>
-                <h3 class="text-xl text-center mt-5">
-                    Postgres / Sqlite <br> Database
-                </h2>
-            </div>    
-
-            <div class="w-[250px] h-[250px] 
-                        flex flex-col shadow-xl
-                        rounded-lg
-                        place-content-center place-items-center
-                        ">
-                <i class="bi bi-google
-                        text-[#2c2a2a]
-                            text-6xl"></i>
-                <h3 class="text-xl text-center mt-5">SEO optimization</h2>
-            </div>   
-
-        </div>
-
-    </section>
-
-    <section class="w-full flex 
-                    place-content-center 
-                    px-[10%]
-                    p-4
-                    gap-[10%]
-                    place-items-center
-                    max-md:flex-col
-                    overflow-hidden
-                    "
-                    >
-        <div class="flex flex-col place-items-center gap-2">
-            <h3 class="text-4xl max-md:text-3xl">Make it yours</h3>
-            <a class="btn mt-4 rounded-xl hover:scale-[1.05] duration-[0.3s]"
-                href="https://github.com/PaulleDemon/Django-website-template"
-            >
-                Get now!
-            </a>
-        </div>
-    </section>
-
-    <section class="mt-5 w-full flex flex-col p-[5%]
-                     place-items-center">
-
-        <h2 class="text-3xl max-md:text-xl primary-text-color font-medium">
-            What some of our clients say
-        </h2>
-        
-        <div class="mt-[5%] flex w-full place-content-center gap-[5%]">
-
-            <div class="review-container flex flex-col">
-                <div class="flex h-[150px] max-w-[550px]">
-                    <div class="slides fade text-lg max-md:text-base text-justify">
-                        <q class="italic text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, culpa?
-                        </q>
-                        <div class="mt-2 text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="mt-3">- Trich B</p>
-                    </div>
-                
-                    <div class="slides fade text-lg max-md:text-base text-justify">
-                        <q class="italic text-gray-600 ">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aspernatur optio deleniti soluta atque esse explicabo suscipit totam repudiandae voluptate.
-                        </q>
-                        <div class="mt-2 text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="mt-3">- Bára Müllerová</p>
-                    </div>
-
-                    <div class="slides fade text-lg max-md:text-base text-justify">
-                        
-                        <q class="italic text-gray-600 ">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ad.
-                        </q>
-                        <div class="mt-2 text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="mt-3">- Matt freeman</p>
-
-                    </div>
-                </div>
-              
-                <!-- Navigation dots -->
-                <div class="dots-container mt-auto">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
+<!-- Hero Section -->
+<section class="w-full min-h-[100vh] max-w-[100vw] flex flex-col overflow-hidden relative bg-gradient-to-br from-yellow-100 via-blue-100 to-pink-100 place-items-center justify-center" id="hero-section">
+    <div class="w-full h-full p-[5%] flex flex-col md:flex-row items-center justify-between gap-10">
+        <div class="flex flex-col max-w-[600px] gap-6">
+            <h1 class="text-6xl font-extrabold uppercase leading-tight text-blue-900 drop-shadow-lg" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">
+                Welcome to Coqui Coast!<br>
+                <span class="text-yellow-500">Puerto Rican Vibes</span> in <span class="text-blue-500">Chicago</span> 🏖️🐸
+            </h1>
+            <p class="text-xl text-blue-800 font-semibold">Your one-stop shop for Puerto Rican-themed beach gear, gifts, and fun! Celebrate the spirit of the island, right here on Lake Michigan.</p>
+            <div class="flex gap-4 mt-2">
+                <a href="#shop" class="btn bg-yellow-400 text-blue-900 font-bold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition">Shop Now</a>
+                <a href="{% url 'about' %}" class="btn bg-blue-400 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:bg-blue-300 transition">About Us</a>
             </div>
         </div>
-
-    
-       
-    </section>
-
-    <section class="w-full flex 
-                    flex-col
-                    place-content-center 
-                    px-[10%]
-                   
-                    gap-[10%]
-                    place-items-center
-                    ">
-
-        <div class="w-full place-content-center 
-                    flex flex-col gap-3
-                    place-items-center
-                    ">
-
-            <h2 class="text-3xl max-md:text-2xl primary-text-color">Special Newsletter signup</h2>
-            <h2 class="text-xl max-md:text-lg">Get to know about our future templates</h2>
-            
-            {% comment %} {% include "html/newsletter/form.html" %} {% endcomment %}
-
-            <div class="input flex h-[50px]  p-2 
-                            overflow-hidden place-items-center ">
-                            
-                <input type="email" class="w-full h-full bg-transparent outline-hidden px-3"
-                        placeholder="email"
-                        name="email"
-                        required
-                    >
-                
-                <button class="btn h-[35px] 
-                            
-                            duration-[0.3s]
-                            transition-colors
-                            " 
-                            type="submit"
-                            >
-                    Signup
-                </button>   
-            </div>
+        <div class="max-w-[400px] w-full flex flex-col items-center">
+            <img src="{% static './assets/images/home/coqui-frog.png' %}" alt="Coqui Frog Mascot" class="w-full h-auto rounded-full border-4 border-yellow-400 shadow-xl bg-white">
+            <span class="mt-2 text-lg text-blue-700 font-bold">¡Wepa! Beach fun, Chicago style.</span>
         </div>
-
-    </section>
-
-    <div class="fixed
-                top-[50%] translate-y-[-50%]
-                left-[50%] translate-x-[-50%]
-                w-[450px] max-h-[450px] 
-                max-md:w-[350px]
-                z-40
-                p-3
-                hidden
-                flex 
-                flex-col
-                rounded-md
-                shadow-2xl
-                bg-white"
-                id="modal"
-                >
-        {% comment %} feedback modal {% endcomment %}
-        <div class="w-full relative h-[40px]">
-            <button class="text-4xl 
-                            bi bi-x
-                            absolute
-                            right-2
-                            "
-                    id="modal-close"
-                            >
-        </div>
-        </button>
-        <h2 class="text-2xl text-center mt-[5%]" 
-                id="modal-title"></h2>
-
-        <div class="text-base font-normal mt-2" 
-                id="modal-description">
-        </div>
-
-        <textarea id="modal-input" 
-                placeholder="write..."
-                maxlength="2000"
-                class="input w-full 
-                        hidden
-                        mt-2
-                        resize-y 
-                        text-base
-                        font-normal
-                        min-h-[50px]
-                        max-h-[150px]"></textarea>
-
-        <div class="w-full flex place-content-center mt-3">
-            <a href="#" class="btn text-sm cursor-pointer" id="modal-action-btn">
-                Open
-            </a>
-        </div>
-        
     </div>
-    
+</section>
+
+<!-- Featured Products Section -->
+<section id="shop" class="w-full py-16 bg-white flex flex-col items-center">
+    <h2 class="text-4xl font-extrabold text-blue-900 mb-8">Featured Beach Gear</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-5xl">
+        <div class="bg-yellow-100 rounded-lg shadow-lg p-6 flex flex-col items-center">
+            <img src="{% static './assets/images/home/beach-towel.jpg' %}" alt="Beach Towel" class="w-40 h-40 object-cover rounded-full border-2 border-blue-300 mb-4">
+            <h3 class="text-2xl font-bold text-blue-900">Coqui Beach Towel</h3>
+            <p class="text-blue-700">Soft, vibrant, and perfect for the lake or the island!</p>
+        </div>
+        <div class="bg-blue-100 rounded-lg shadow-lg p-6 flex flex-col items-center">
+            <img src="{% static './assets/images/home/flip-flops.jpg' %}" alt="Flip Flops" class="w-40 h-40 object-cover rounded-full border-2 border-yellow-300 mb-4">
+            <h3 class="text-2xl font-bold text-blue-900">Puerto Rican Flip Flops</h3>
+            <p class="text-blue-700">Step into summer with island flair and Chicago comfort.</p>
+        </div>
+        <div class="bg-pink-100 rounded-lg shadow-lg p-6 flex flex-col items-center">
+            <img src="{% static './assets/images/home/beach-bag.jpg' %}" alt="Beach Bag" class="w-40 h-40 object-cover rounded-full border-2 border-blue-300 mb-4">
+            <h3 class="text-2xl font-bold text-blue-900">Island Beach Bag</h3>
+            <p class="text-blue-700">Carry your essentials in style—beach, city, or anywhere!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Chicago & Puerto Rico Connection Section -->
+<section class="w-full py-12 bg-gradient-to-r from-blue-100 via-yellow-100 to-pink-100 flex flex-col items-center">
+    <h2 class="text-3xl font-extrabold text-blue-900 mb-4">From Chicago to Puerto Rico</h2>
+    <p class="text-lg text-blue-800 max-w-2xl text-center">Coqui Coast was born in Chicago, inspired by the vibrant culture, music, and beaches of Puerto Rico. We bring the warmth and joy of the island to the Windy City—one beach day at a time!</p>
+    <div class="flex gap-6 mt-6">
+        <span class="text-2xl">🌆</span>
+        <span class="text-2xl">➔</span>
+        <span class="text-2xl">🏝️</span>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="w-full py-16 bg-white flex flex-col items-center">
+    <h2 class="text-3xl font-extrabold text-blue-900 mb-8">What Our Customers Say</h2>
+    <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl justify-center">
+        <div class="bg-yellow-100 rounded-lg shadow-md p-6 flex-1">
+            <q class="italic text-blue-700">The Coqui Beach Towel is my new favorite! Reminds me of home every time I hit the lake. ¡Gracias!</q>
+            <div class="mt-2 text-yellow-500 flex gap-1">{% for i in "12345" %}<i class="bi bi-star-fill"></i>{% endfor %}</div>
+            <p class="mt-3 font-bold text-blue-900">- Maria R.</p>
+        </div>
+        <div class="bg-blue-100 rounded-lg shadow-md p-6 flex-1">
+            <q class="italic text-blue-700">Love the flip flops! Super comfy and the design is so fun. Chicago needed this!</q>
+            <div class="mt-2 text-yellow-500 flex gap-1">{% for i in "12345" %}<i class="bi bi-star-fill"></i>{% endfor %}</div>
+            <p class="mt-3 font-bold text-blue-900">- Luis F.</p>
+        </div>
+        <div class="bg-pink-100 rounded-lg shadow-md p-6 flex-1">
+            <q class="italic text-blue-700">The beach bag is perfect for my summer adventures. Love the PR vibes!</q>
+            <div class="mt-2 text-yellow-500 flex gap-1">{% for i in "12345" %}<i class="bi bi-star-fill"></i>{% endfor %}</div>
+            <p class="mt-3 font-bold text-blue-900">- Jasmine T.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Signup Section -->
+<section class="w-full py-12 bg-gradient-to-r from-yellow-100 via-blue-100 to-pink-100 flex flex-col items-center">
+    <h2 class="text-2xl font-extrabold text-blue-900 mb-2">Join the Coqui Coast Crew!</h2>
+    <p class="text-lg text-blue-800 mb-4">Get exclusive deals, beach tips, and island inspiration—straight to your inbox.</p>
+    <form class="flex flex-col md:flex-row gap-4 items-center w-full max-w-xl">
+        <input type="email" class="input w-full px-4 py-2 rounded-full border-2 border-blue-300 focus:border-yellow-400 outline-none" placeholder="Your email address" name="email" required>
+        <button class="btn bg-yellow-400 text-blue-900 font-bold px-6 py-2 rounded-full shadow-lg hover:bg-yellow-300 transition" type="submit">Sign Up</button>
+    </form>
+</section>
+
 {% endblock content %}
 
 {% block scripts %}

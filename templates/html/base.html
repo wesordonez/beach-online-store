@@ -81,154 +81,57 @@
         </div>
     </div>
 
-    <header class="flex w-full z-20
-                    h-[60px]  
-                    lg:justify-around
-                    absolute top-0 px-[10%]
-                    max-lg:mr-auto
-                    bg-white
-                    text-black
-                    ">
-
-        <a class="w-[50px] h-[50px] p-[4px]" href="{% url "home" %}">
-            <img src="{% static "assets/logos/logo1.png" %}" 
-                  alt="logo" class="w-full h-full object-contain">
-
+    <header class="flex w-full z-20 h-[70px] lg:justify-around absolute top-0 px-[10%] max-lg:mr-auto bg-gradient-to-r from-yellow-200 via-blue-200 to-pink-200 text-blue-900 font-bold shadow-lg border-b-4 border-yellow-400" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">
+        <a class="w-[60px] h-[60px] p-[4px] flex items-center" href="{% url 'home' %}">
+            <img src="{% static 'assets/logos/logo1.png' %}" alt="Coqui Coast logo" class="w-full h-full object-contain rounded-full border-2 border-yellow-400 shadow-md">
         </a>
-        <div class="collapsable-header animated-collapse max-lg:shadow-md"
-                    id="collapsed-header-items"
-                    >
-            <div class=" w-max
-                            text-base 
-                            flex gap-5 h-full lg:mx-auto
-                            lg:place-items-center 
-                            max-lg:place-items-end
-                            max-lg:flex-col
-                            max-lg:mt-[50px]
-                            max-lg:gap-5
-                            text-black
-                        ">
-                    
-                <a class="header-links" href="{% url "home" %}">
-                    About us
-                </a>
-                <a class="header-links" href="{% url "blogs" %}"
-                        rel="noreferrer"
-                        >
-                    Blogs
-                </a>
-                <a class="header-links" href="{% url "contact-us" %}"
-                        rel="noreferrer"
-                        >
-                    Contact us
-                </a>
+        <div class="collapsable-header animated-collapse max-lg:shadow-md" id="collapsed-header-items">
+            <div class="w-max text-lg flex gap-7 h-full lg:mx-auto lg:place-items-center max-lg:place-items-end max-lg:flex-col max-lg:mt-[60px] max-lg:gap-5 text-blue-900">
+                <a class="header-links flex items-center gap-1" href="{% url 'home' %}">🏠 Home</a>
+                <a class="header-links flex items-center gap-1" href="{% url 'about' %}">🌴 About</a>
+                <a class="header-links flex items-center gap-1" href="#">🛍️ Shop</a>
+                <a class="header-links flex items-center gap-1" href="{% url 'blogs' %}" rel="noreferrer">📰 Blogs</a>
+                <a class="header-links flex items-center gap-1" href="{% url 'contact-us' %}" rel="noreferrer">📬 Contact</a>
             </div>
-            <div class="flex gap-[20px] place-items-center text-xl
-                         max-lg:!text-white
-                         max-lg:place-content-center
-                        max-lg:w-full
-                         max-lg:place-items-start
-                         ">
-                <a href="https://www.facebook.com/" 
-                        target="_blank" 
-                        rel="noreferrer"
-                        aria-label="facebook"
-                        class=" header-links
-                                transition-colors
-                                duration-[0.3s]
-                                "
-                        >
-                    <i class="bi bi-facebook"></i>
-                </a>
-
-                <a href="https://www.instagram.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="instagram"
-                        class="header-links
-                                transition-colors
-                                duration-[0.3s]
-                                "
-                            >
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://github.com/PaulleDemon"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="github"
-                        class="header-links
-                                transition-colors
-                                duration-[0.3s]
-                                "
-                            >
-                    <i class="bi bi-github"></i>
-                </a>
+            <div class="flex gap-[20px] place-items-center text-xl max-lg:!text-white max-lg:place-content-center max-lg:w-full max-lg:place-items-start">
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="facebook" class="header-links transition-colors duration-[0.3s]"> <i class="bi bi-facebook"></i> </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="instagram" class="header-links transition-colors duration-[0.3s]"> <i class="bi bi-instagram"></i> </a>
+                <a href="https://github.com/PaulleDemon" target="_blank" rel="noreferrer" aria-label="github" class="header-links transition-colors duration-[0.3s]"> <i class="bi bi-github"></i> </a>
             </div>
         </div>
-        <button class="absolute text-black z-50 
-                        right-3
-                        top-3
-                        
-                         text-3xl  bi bi-list lg:hidden" 
-                onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
-            <!-- <i class="bi bi-list"></i> -->
-        </button>
+        <button class="absolute text-blue-900 z-50 right-3 top-3 text-3xl bi bi-list lg:hidden" onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
     </header>
 
     <div class="w-full h-full mt-[50px]">
         {% block content %}{% endblock content %}
     </div>
-    <footer class="flex max-md:flex-col w-full p-[5%]
-                    px-[10%] place-content-around gap-3 
-                    text-black
-                    mt-auto
-                    ">
-        <div class="h-full w-[250px] flex flex-col 
-                    gap-6 place-items-center max-md:w-full">
-            
-            <img src="{% static "assets/logos/logo1.png" %}" 
-                alt="logo"  class="max-w-[150px] max-md:max-w-[120px]">
+    <footer class="flex max-md:flex-col w-full p-[5%] px-[10%] place-content-around gap-3 text-blue-900 bg-gradient-to-r from-yellow-200 via-blue-200 to-pink-200 font-bold mt-auto border-t-4 border-yellow-400" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">
+        <div class="h-full w-[250px] flex flex-col gap-6 place-items-center max-md:w-full">
+            <img src="{% static 'assets/logos/logo1.png' %}" alt="Coqui Coast logo" class="max-w-[150px] max-md:max-w-[120px] rounded-full border-2 border-yellow-400 shadow-md">
             <div>
-                2 Lord Edward St,   
-                <br>
-                D02 P634,
-                <br>
-                United States
+                123 Lake Shore Dr,<br>
+                Chicago, IL 60601,<br>
+                United States 🇵🇷
             </div>
-            <div class="mt-3 font-semibold text-lg">
-                Follow us
-            </div>
+            <div class="mt-3 font-semibold text-lg">Follow us</div>
             <div class="flex gap-4 text-2xl">
-                <a href="https://facebook.com/" aria-label="Facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://twitter.com/pauls_freeman" aria-label="Twitter">
-                    <i class="bi bi-twitter"></i>
-                </a>
-                <a href="https://instagram.com/" class="w-[40px] h-[40px]" aria-label="Instagram">
-                   <i class="bi bi-instagram"></i>
-                </a>
+                <a href="https://facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/pauls_freeman" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com/" class="w-[40px] h-[40px]" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             </div>
         </div>
-
-        <div class="h-full w-[250px] flex flex-col 
-                    gap-4">
-
-            <h2 class="text-3xl max-md:text-xl">
-                Resources
-            </h2>
-            <div class=" flex flex-col gap-3 max-md:text-sm">
-                <a href="{% url "home" %}" class="footer-link">About us</a>
-                <a href="" class="footer-link">FAQ</a>
-                <a href="{% url "contact-us" %}" class="footer-link">Contact Us</a>
-                <a href="" class="footer-link">Privacy policy</a>
+        <div class="h-full w-[250px] flex flex-col gap-4">
+            <h2 class="text-3xl max-md:text-xl">Resources</h2>
+            <div class="flex flex-col gap-3 max-md:text-sm">
+                <a href="{% url 'home' %}" class="footer-link">🏠 Home</a>
+                <a href="{% url 'about' %}" class="footer-link">🌴 About</a>
+                <a href="{% url 'contact-us' %}" class="footer-link">📬 Contact</a>
+                <a href="#" class="footer-link">🛍️ Shop</a>
+                <a href="#" class="footer-link">FAQ</a>
+                <a href="#" class="footer-link">Privacy policy</a>
             </div>
-
         </div>
-
-        {% block footer %}
-        {% endblock footer %}
-
+        {% block footer %}{% endblock footer %}
     </footer>
 </body>
 

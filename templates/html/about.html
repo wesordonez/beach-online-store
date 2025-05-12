@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Coqui Coast - {% endblock title %}
+{% block description %}Learn about Coqui Coast, Chicago's Puerto Rican beach shop!{% endblock description %}
+
+{% block content %}
+<section class="w-full min-h-[60vh] flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 via-blue-100 to-pink-100 py-16">
+    <div class="flex flex-col items-center gap-6">
+        <img src="{% static 'assets/logos/logo1.png' %}" alt="Coqui Coast logo" class="w-32 h-32 rounded-full border-4 border-yellow-400 shadow-lg">
+        <h1 class="text-5xl font-extrabold text-blue-900" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">About Coqui Coast</h1>
+        <p class="text-xl text-blue-800 font-semibold text-center max-w-2xl">Bringing Puerto Rican beach vibes to the heart of Chicago! 🏖️🐸</p>
+    </div>
+</section>
+
+<section class="w-full flex flex-col items-center py-12 bg-white">
+    <div class="max-w-3xl w-full flex flex-col gap-8">
+        <div>
+            <h2 class="text-3xl font-bold text-yellow-600 mb-2">Our Story</h2>
+            <p class="text-lg text-blue-900">Coqui Coast was founded by Chicago locals who fell in love with the vibrant culture, music, and beaches of Puerto Rico. Inspired by the coquí frog and the island's joyful spirit, we set out to bring a taste of the tropics to the Windy City. Our shop is a celebration of Puerto Rican heritage, beach fun, and Chicago pride!</p>
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold text-blue-600 mb-2">Meet the Team</h2>
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <img src="{% static 'assets/images/home/founder.jpg' %}" alt="Founder" class="w-32 h-32 rounded-full border-2 border-pink-300 shadow-md">
+                <div>
+                    <h3 class="text-xl font-bold text-blue-900">Sofia Rivera</h3>
+                    <p class="text-blue-800">Founder & Chief Beach Officer</p>
+                    <p class="text-blue-700">"I wanted to create a place where everyone in Chicago could feel the warmth and joy of Puerto Rico, no matter the season!"</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold text-pink-600 mb-2">Chicago <span class="text-blue-900">&</span> Puerto Rico</h2>
+            <p class="text-blue-900">Did you know Chicago is home to one of the largest Puerto Rican communities in the U.S.? Our shop is a bridge between two vibrant cultures—celebrating the best of both worlds with every product we offer.</p>
+            <div class="flex gap-4 mt-2 text-2xl">
+                <span>🌆</span><span>➔</span><span>🏝️</span>
+            </div>
+        </div>
+        <div class="flex flex-col items-center gap-2 mt-8">
+            <a href="/" class="btn bg-yellow-400 text-blue-900 font-bold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition">Back to Home</a>
+            <a href="{% url 'contact-us' %}" class="btn bg-blue-400 text-white font-bold px-8 py-3 rounded-full shadow-lg hover:bg-blue-300 transition">Contact Us</a>
+        </div>
+    </div>
+</section>
+{% endblock content %} 

@@ -15,10 +15,6 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
-header{
-    background-color: #fff;
-    color: #000;
-}
 
 
 header > .collapsable-header{
