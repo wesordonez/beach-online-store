@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% load tz %}
+{% load static %}
+
+{% load custom_tags %}
+
+{% block title %}{{blog.title}} | {% endblock title %}
+{% block description %}{{blog.meta_description}}{% endblock description %}
+
+{% block socialTitle %}{{blog.title}} | {% endblock socialTitle %}
+{% block socialDescription %}{{blog.meta_description}}{% endblock socialDescription %}
+{% block pageType %}article{% endblock pageType %}
+{% comment %} {% block pageLink %}{% endblock pageLink %} {% endcomment %}
+{% if blog.thumbnail %}
+    {% block pageImage %}{{ blog.thumbnail }}{% endblock pageImage %}
+{% endif %}
+
+{% block head_tags %}
+    {{ block.super }}
+    <link rel="stylesheet" id="highlightjs-light"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="{% static "./css/blog/blog.css" %}">
+
+    <style>
+        figcaption{
+            display: none;
+        }
+    </style>
+
+{% endblock head_tags %}
+
+
+{% block content %}
+<div class="flex flex-col h-full w-full 
+            lg:px-[30%] md:px-[10%]
+            place-items-center p-4">
+
+    <div class="text-4xl max-sm:text-3xl mt-6 font-semibold leading-snug w-full">
+        <h1 class="text-4xl max-sm:text-3xl font-semibold leading-snug w-full">{{blog.title}}</h1>
+    </div>
+    
+    <div class="mt-6 w-full text-lg 
+                text-justify leading-relaxed" id="editor">
+            {{blog.body|safe}}
+    </div>
+
+    <div class="m-2 p-2 min-w-[30px] min-h-[80px] 
+                            flex lg:flex-col lg:fixed 
+                            place-content-center justify-around 
+                            mt-5
+                            md:top-[10%] 
+                            md:text-2xl
+                            max-sm:text-xl 
+                            lg:right-[10%] max-sm:rounded-full">
+        <div class="m-2 cursor-pointer social-share-link" id="copy-link" aria-label="copy link">
+            <i class="bi bi-share"></i>
+        </div>
+        
+    </div>
+    
+</div>
+
+{% endblock content %}
+
+{% block scripts %}
+<link rel="stylesheet" href="{% static "./css/blog.css" %}">
+<script>
+
+    const copy_link = document.getElementById("copy-link")
+
+    copy_link.onclick = () => {
+        navigator.clipboard.writeText(window.location.href).then(function() {
+            toastAlert(null, "Link copied")
+          }, function(err) {
+            callback_form_toast_body.innerText = `Error copying link`
+          })
+    }
+
+</script>
+<script src="{% static "./js/editor/blog-view.js" %}"></script>
+
+{% endblock scripts %}

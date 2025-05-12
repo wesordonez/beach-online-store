@@ -1,0 +1,313 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load custom_tags %}
+
+{% block content %}
+
+    <section class="w-full min-h-[100vh]  max-w-[100vw]
+                        flex flex-col overflow-hidden relative"
+                        id="hero-section"
+                        >
+            
+            <div class="w-full h-full p-[5%]
+                        place-content-center min-h-[100vh]
+                        justify-around place-items-center
+                        flex max-lg:flex-col">
+
+                <div class="flex flex-col place-content-center max-w-[650px] min-w-[550px] 
+                            max-md:min-w-[300px]">
+                    <h1 class="text-6xl font-semibold uppercase 
+                            leading-normal max-md:text-5xl max-md:leading-[70px]">
+                        Dunosis LLC Web Development Django Template 🚀
+                    </h1>
+                    <div class="mt-5 p-2 text-justify max-md:max-w-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi consequuntur provident, aperiam blanditiis quia quae fugit commodi aliquam fugiat earum repellendus impedit ex perspiciatis iste a, sint possimus cupiditate odio? Delectus, recusandae! Iure porro illum sint labore, expedita inventore sapiente fugit, consectetur totam nemo temporibus sunt eligendi, odio esse!
+                    </div>
+                    
+                    <a href="https://github.com/PaulleDemon/Django-website-template" 
+                                        class="btn mt-5 ml-auto 
+                                                duration-[0.3s]
+                                                transition-transform
+                                                hover:translate-x-2
+                                                ">
+                        <span>Get started</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="max-w-[750px] 
+                            place-content-center
+                            place-items-center
+                            tw max-md:!mt-10">
+                    <div class="rounded-lg overflow-clip shadow-xl ">
+                        <img src="{% static './assets/images/home/dashboard.png' %}" 
+                                alt="dashboard" class="w-full h-full">
+                    </div>
+                    <div class="mt-5 p-2 text-justify text-2xl">
+                        Code Less. Deliver More
+                    </div>
+                </div>
+
+            </div>
+        
+    </section>
+
+
+    <section class="w-full  max-w-[100vw]
+                    flex flex-col overflow-hidden relative 
+                    place-items-center
+                    place-content-center
+                    p-6
+                    "
+                    >
+
+        <h2 class="text-5xl max-md:text-3xl">Features made for perfect delivery</h2>
+
+        <div class="flex max-lg:flex-col w-full gap-8 
+                    place-content-center mt-10 p-4
+                    place-items-center
+                    ">
+
+            <div class="w-[250px] h-[250px] 
+                        flex flex-col shadow-xl
+                        rounded-lg
+                        place-content-center place-items-center
+                        ">
+                <i class="bi bi-cloud-upload-fill 
+                            text-[#2c2a2a]
+                            text-6xl"></i>
+                <h3 class="text-xl mt-5">Production ready</h2>
+            </div>   
+            <div class="w-[250px] h-[250px] 
+                        flex flex-col shadow-xl
+                        rounded-lg
+                        place-content-center place-items-center
+                        ">
+                <i class="bi bi-phone-fill 
+                        text-[#2c2a2a]
+                            text-6xl"></i>
+                <h3 class="text-xl text-center mt-5">Responsive UI</h2>
+            </div>  
+            <div class="w-[250px] h-[250px] 
+                        flex flex-col shadow-xl
+                        rounded-lg
+                        place-content-center place-items-center
+                        ">
+                <i class="bi bi-database-fill 
+                        text-[#2c2a2a]
+                            text-6xl"></i>
+                <h3 class="text-xl text-center mt-5">
+                    Postgres / Sqlite <br> Database
+                </h2>
+            </div>    
+
+            <div class="w-[250px] h-[250px] 
+                        flex flex-col shadow-xl
+                        rounded-lg
+                        place-content-center place-items-center
+                        ">
+                <i class="bi bi-google
+                        text-[#2c2a2a]
+                            text-6xl"></i>
+                <h3 class="text-xl text-center mt-5">SEO optimization</h2>
+            </div>   
+
+        </div>
+
+    </section>
+
+    <section class="w-full flex 
+                    place-content-center 
+                    px-[10%]
+                    p-4
+                    gap-[10%]
+                    place-items-center
+                    max-md:flex-col
+                    overflow-hidden
+                    "
+                    >
+        <div class="flex flex-col place-items-center gap-2">
+            <h3 class="text-4xl max-md:text-3xl">Make it yours</h3>
+            <a class="btn mt-4 rounded-xl hover:scale-[1.05] duration-[0.3s]"
+                href="https://github.com/PaulleDemon/Django-website-template"
+            >
+                Get now!
+            </a>
+        </div>
+    </section>
+
+    <section class="mt-5 w-full flex flex-col p-[5%]
+                     place-items-center">
+
+        <h2 class="text-3xl max-md:text-xl primary-text-color font-medium">
+            What some of our clients say
+        </h2>
+        
+        <div class="mt-[5%] flex w-full place-content-center gap-[5%]">
+
+            <div class="review-container flex flex-col">
+                <div class="flex h-[150px] max-w-[550px]">
+                    <div class="slides fade text-lg max-md:text-base text-justify">
+                        <q class="italic text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, culpa?
+                        </q>
+                        <div class="mt-2 text-yellow-400">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="mt-3">- Trich B</p>
+                    </div>
+                
+                    <div class="slides fade text-lg max-md:text-base text-justify">
+                        <q class="italic text-gray-600 ">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aspernatur optio deleniti soluta atque esse explicabo suscipit totam repudiandae voluptate.
+                        </q>
+                        <div class="mt-2 text-yellow-400">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="mt-3">- Bára Müllerová</p>
+                    </div>
+
+                    <div class="slides fade text-lg max-md:text-base text-justify">
+                        
+                        <q class="italic text-gray-600 ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ad.
+                        </q>
+                        <div class="mt-2 text-yellow-400">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="mt-3">- Matt freeman</p>
+
+                    </div>
+                </div>
+              
+                <!-- Navigation dots -->
+                <div class="dots-container mt-auto">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+
+    
+       
+    </section>
+
+    <section class="w-full flex 
+                    flex-col
+                    place-content-center 
+                    px-[10%]
+                   
+                    gap-[10%]
+                    place-items-center
+                    ">
+
+        <div class="w-full place-content-center 
+                    flex flex-col gap-3
+                    place-items-center
+                    ">
+
+            <h2 class="text-3xl max-md:text-2xl primary-text-color">Special Newsletter signup</h2>
+            <h2 class="text-xl max-md:text-lg">Get to know about our future templates</h2>
+            
+            {% comment %} {% include "html/newsletter/form.html" %} {% endcomment %}
+
+            <div class="input flex h-[50px]  p-2 
+                            overflow-hidden place-items-center ">
+                            
+                <input type="email" class="w-full h-full bg-transparent outline-hidden px-3"
+                        placeholder="email"
+                        name="email"
+                        required
+                    >
+                
+                <button class="btn h-[35px] 
+                            
+                            duration-[0.3s]
+                            transition-colors
+                            " 
+                            type="submit"
+                            >
+                    Signup
+                </button>   
+            </div>
+        </div>
+
+    </section>
+
+    <div class="fixed
+                top-[50%] translate-y-[-50%]
+                left-[50%] translate-x-[-50%]
+                w-[450px] max-h-[450px] 
+                max-md:w-[350px]
+                z-40
+                p-3
+                hidden
+                flex 
+                flex-col
+                rounded-md
+                shadow-2xl
+                bg-white"
+                id="modal"
+                >
+        {% comment %} feedback modal {% endcomment %}
+        <div class="w-full relative h-[40px]">
+            <button class="text-4xl 
+                            bi bi-x
+                            absolute
+                            right-2
+                            "
+                    id="modal-close"
+                            >
+        </div>
+        </button>
+        <h2 class="text-2xl text-center mt-[5%]" 
+                id="modal-title"></h2>
+
+        <div class="text-base font-normal mt-2" 
+                id="modal-description">
+        </div>
+
+        <textarea id="modal-input" 
+                placeholder="write..."
+                maxlength="2000"
+                class="input w-full 
+                        hidden
+                        mt-2
+                        resize-y 
+                        text-base
+                        font-normal
+                        min-h-[50px]
+                        max-h-[150px]"></textarea>
+
+        <div class="w-full flex place-content-center mt-3">
+            <a href="#" class="btn text-sm cursor-pointer" id="modal-action-btn">
+                Open
+            </a>
+        </div>
+        
+    </div>
+    
+{% endblock content %}
+
+{% block scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="{% static "./js/home.js" %}"></script>
+
+{% endblock scripts %}
